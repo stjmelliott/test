@@ -3,128 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Update | Coming Soon</title>
+    <title>Project Update | Working Hard 🚀</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
-        :root {
-            --primary-color: #00d2ff;
-            --secondary-color: #3a7bd5;
-            --bg-dark: #0f172a;
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --text-light: #f8fafc;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: var(--text-light);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .project-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            max-width: 550px;
+            width: 100%;
             overflow: hidden;
         }
-
-        /* Ambient background glow */
-        body::before {
-            content: "";
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: var(--secondary-color);
-            filter: blur(150px);
-            opacity: 0.2;
-            top: 10%;
-            left: 10%;
-            z-index: 0;
-        }
-
-        .glass-card {
-            position: relative;
-            z-index: 1;
-            background: var(--glass-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 3rem 2rem;
-            border-radius: 24px;
-            text-align: center;
-            max-width: 450px;
-            width: 90%;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-
-        .status-badge {
-            display: inline-block;
-            background: rgba(0, 210, 255, 0.1);
-            color: var(--primary-color);
-            padding: 6px 16px;
-            border-radius: 100px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: 1px solid rgba(0, 210, 255, 0.3);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, #fff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        p {
-            color: #94a3b8;
-            line-height: 1.6;
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-        }
-
-        .pulse {
-            display: inline-block;
-            width: 8px;
+        .card-accent {
             height: 8px;
-            background-color: var(--primary-color);
-            border-radius: 50%;
-            margin-right: 8px;
-            box-shadow: 0 0 0 rgba(0, 210, 255, 0.4);
-            animation: pulse-animation 2s infinite;
+            background: linear-gradient(90deg, #0d6efd, #00d2ff);
         }
-
-        @keyframes pulse-animation {
-            0% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(0, 210, 255, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0); }
+        .icon-box {
+            font-size: 4rem;
+            color: #0d6efd;
+            margin-bottom: 1.5rem;
         }
-
-        footer {
-            margin-top: 2rem;
-            font-size: 0.8rem;
-            color: #64748b;
+        .status-pill {
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .btn-contact {
+            border-radius: 10px;
+            padding: 12px 25px;
+            transition: all 0.3s ease;
+        }
+        .btn-contact:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
         }
     </style>
 </head>
 <body>
 
-    <div class="glass-card">
-        <div class="status-badge">
-            <span class="pulse"></span>In Progress
-        </div>
-        <h1>Under Construction</h1>
-        <p>Working on the project now. I'll get back to you with updates very soon.</p>
-        
-        <footer>
-            &copy; <?php echo date("Y"); ?> &bull; Project Dashboard
-        </footer>
-    </div>
+<div class="container d-flex justify-content-center">
+    <div class="project-card">
+        <div class="card-accent"></div>
+        <div class="card-body p-5 text-center">
+            
+            <div class="icon-box">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
 
+            <span class="badge rounded-pill bg-light text-primary status-pill border px-3 py-2 mb-4">
+                <i class="fa-solid fa-gears fa-spin me-2"></i> Under Construction 🛠️
+            </span>
+
+            <h1 class="fw-bold mb-3">Project in Progress 🚀</h1>
+            
+            <p class="text-muted mb-4 fs-5">
+                I'm currently building something great! I'll be back online with updates shortly. 👨‍💻
+            </p>
+
+            <div class="progress mb-4" style="height: 12px; border-radius: 10px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" 
+                     role="progressbar" 
+                     style="width: 75%" 
+                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="d-grid gap-2">
+                <a href="mailto:selliott@strongtco.com" class="btn btn-primary btn-contact fw-bold">
+                    <i class="fa-solid fa-envelope me-2"></i> Get in Touch
+                </a>
+            </div>
+
+            <footer class="mt-4">
+                <p class="small text-secondary mb-0">
+                    &copy; <?php echo date("Y"); ?> StrongTCO. All rights reserved. ✨
+                </p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
